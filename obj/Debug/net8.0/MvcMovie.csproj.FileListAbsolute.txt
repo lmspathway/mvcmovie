@@ -300,3 +300,4 @@
 /Users/lucasmendonca/Documents/personal-projects/cse325/MvcMovie/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
 /Users/lucasmendonca/Documents/personal-projects/cse325/MvcMovie/obj/Debug/net8.0/MvcMovie.csproj.AssemblyReference.cache
 /Users/lucasmendonca/Documents/personal-projects/cse325/MvcMovie/obj/Debug/net8.0/MvcMovie.csproj.Up2Date
+/Users/lucasmendonca/Documents/personal-projects/cse325/MvcMovie/obj/Debug/net8.0/MvcMovie.sourcelink.json
