@@ -2,7 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section">
+    <h1>Welcome to Movie App! 🎬</h1>
+    <p>Manage your favorite movie collection easily and modernly.</p>
+    <p class="lead">Explore, add and organize your movies with style.</p>
+    <a asp-controller="Movies" asp-action="Index" class="btn btn-modern">
+        View My Movies
+    </a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="modern-card text-center">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">📽️</div>
+            <h3>Explore Movies</h3>
+            <p>Browse through your movie collection and discover new titles.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="modern-card text-center">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">➕</div>
+            <h3>Add Movies</h3>
+            <p>Add new movies to your collection with detailed information.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="modern-card text-center">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
+            <h3>Filter & Search</h3>
+            <p>Find movies quickly using filters by genre, year, and title.</p>
+        </div>
+    </div>
 </div>
