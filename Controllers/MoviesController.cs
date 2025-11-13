@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -25,7 +26,7 @@ namespace MvcMovie.Controllers
             return "From [HttpPost]Index: filter on " + searchString;
         }
         // GET: Movies
-        public async Task<IActionResult> Index(string movieGenre, string searchString)
+        public async Task<IActionResult> Index(string movieYear, string movieGenre, string searchString)
         {
             if (_context.Movie == null)
             {
@@ -47,6 +48,13 @@ namespace MvcMovie.Controllers
             if (!string.IsNullOrEmpty(movieGenre))
             {
                 movies = movies.Where(x => x.Genre == movieGenre);
+            }
+            if (!string.IsNullOrEmpty(movieYear))
+            {
+                if (int.TryParse(movieYear, out int year))
+                {
+                    movies = movies.Where(x => x.ReleaseDate.Year == year);
+                }
             }
 
             var movieGenreVM = new MovieGenreViewModel

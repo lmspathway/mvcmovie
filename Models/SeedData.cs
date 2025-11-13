@@ -51,8 +51,31 @@ public static class SeedData
                     Genre = "Western",
                     Rating = "R",
                     Price = 3.99M
+                },
+                new Movie
+                {
+                    Title = "Inception",
+                    ReleaseDate = DateTime.Parse("2010-7-16"),
+                    Genre = "Science Fiction",
+                    Rating = "PG-13",
+                    Price = 10.99M
+                },
+                new Movie
+                {
+                    Title = "The Dark Knight",
+                    ReleaseDate = DateTime.Parse("2008-7-18"),
+                    Genre = "Action",
+                    Rating = "PG-13",
+                    Price = 9.99M
+                },
+                new Movie
+                {
+                    Title = "Star Wars: Episode III - Revenge of the Sith",
+                    ReleaseDate = DateTime.Parse("2005-5-19"),
+                    Genre = "Science Fiction",
+                    Rating = "PG-13",
+                    Price = 8.99M
                 }
-                
             );
             context.SaveChanges();
         }

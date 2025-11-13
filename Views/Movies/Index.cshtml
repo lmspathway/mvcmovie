@@ -1,7 +1,7 @@
 @model MvcMovie.Models.MovieGenreViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "My Movies";
 }
 
 <h1>Index</h1>
@@ -15,6 +15,8 @@
         <select asp-for="MovieGenre" asp-items="Model.Genres">
             <option value="">All</option>
         </select>
+        <label>Year: <input type="number" asp-for="MovieYear" /></label>
+        <input type="submit" value="Filter" />
 
         <label>Title: <input type="text" asp-for="SearchString" /></label>
         <input type="submit" value="Filter" />
